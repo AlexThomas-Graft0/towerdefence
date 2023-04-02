@@ -1,0 +1,132 @@
+.editor-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.sidebar {
+  flex-basis: 30%;
+}
+
+h1,
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.tile-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.tile {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.tile.grass {
+  background-image: url(images/grass.png);
+  background-size: cover;
+}
+
+.tile.dirt {
+  background-image: url(images/grass.png);
+  background-size: cover;
+}
+
+.tile.stone {
+  background-image: url(images/grass.png);
+  background-size: cover;
+}
+
+.tile.water {
+  background-image: url(images/grass.png);
+  background-size: cover;
+}
+
+.tile.sand {
+  background-image: url(images/grass.png);
+  background-size: cover;
+}
+
+.tile.ice {
+  background-image: url(images/grass.png);
+  background-size: cover;
+}
+
+.tile.lava {
+  background-image: url(images/grass.png);
+  background-size: cover;
+}
+
+.tile.forest {
+  background-image: url(images/grass.png);
+  background-size: cover;
+}
+
+.tile.mountain {
+  background-image: url(images/grass.png);
+  background-size: cover;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  grid-gap: 0;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.grid .tile {
+  border: none;
+}
+
+.map-container {
+  flex-basis: 60%;
+}
+
+#save-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#save-button:hover {
+  background-color: #0062cc;
+}
+
+.buttons button {
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #0062cc;
+}
