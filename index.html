@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tower Defense Map Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" integrity="sha512-07zfrlFwPy1eBth/EakG0ZDdHRjifDpNRJk9f0C08g0+Uq3Hg6lpi0cQ40UMM4aaHK2YKhUk0XsOoTup91d22g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="bg-gray-200 font-sans leading-normal tracking-normal">
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <span class="font-semibold text-xl tracking-tight">Tower Defense Map Editor</span>
+      </div>
+    </nav>
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-1/4 p-4">
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-4">
+          <h2 class="text-lg font-semibold mb-4">Select a tile:</h2>
+          <div class="flex flex-wrap -mx-2">
+            <div class="w-1/3 p-2">
+              <div class="tile grass" data-type="grass"></div>
+            </div>
+            <div class="w-1/3 p-2">
+              <div class="tile dirt" data-type="dirt"></div>
+            </div>
+            <div class="w-1/3 p-2">
+              <div class="tile stone" data-type="stone"></div>
+            </div>
+            <div class="w-1/3 p-2">
+              <div class="tile water" data-type="water"></div>
+            </div>
+            <div class="w-1/3 p-2">
+              <div class="tile sand" data-type="sand"></div>
+            </div>
+            <div class="w-1/3 p-2">
+              <div class="tile ice" data-type="ice"></div>
+            </div>
+            <div class="w-1/3 p-2">
+              <div class="tile lava" data-type="lava"></div>
+            </div>
+            <div class="w-1/3 p-2">
+              <div class="tile forest" data-type="forest"></div>
+            </div>
+            <div class="w-1/3 p-2">
+              <div class="tile mountain" data-type="mountain"></div>
+            </div>
+          </div>
+          <div class="mt-6">
+            <button id="start-point-button" class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full">Add Start Point</button>
+            <button id="end-point-button" class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full">Add End Point</button>
+          </div>
+        </div>
+        <button id="save-button" class="bg-teal-500 hover:bg-teal-700 text
